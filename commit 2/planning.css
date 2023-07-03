@@ -1,0 +1,199 @@
+/* --------------- Réglages de base ----------------- */
+
+@font-face {
+    font-family: "Poppins-Regular" ;
+    src: url(./polices/Poppins-Regular.ttf);
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins-Regular";
+}
+
+body{
+    width: 100%;   
+}
+
+.entete{
+    width: 100vw;
+    height: 10vh;
+}
+.navbar{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    height: 10vh;
+    padding: 25px;
+    justify-content: center
+}
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+        #img_logo{
+        width: 100px;
+        height: auto;
+
+    }
+.navbar a{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.navbar .txt_logo{
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 25px;
+}
+.navbar .nav_links ul{
+    display: flex;
+}
+.navbar .nav_links ul li{
+    margin: 0 25px;
+    color: white;
+    font-size: 0.9em;
+}
+.navbar .nav_links ul li.active a{
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    .nav_links{
+        display: none;
+    }
+}
+.navbar .menu_hamburger{
+    display: none;
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        padding: 0;
+    }
+    .navbar .menu_hamburger{
+        display: block;
+    }
+    .nav_links{
+        position: absolute;
+        display: flex;
+        background-color: rgba(27, 26, 26, 0.804);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(6px);
+        margin-left: 100%;
+        
+    }
+    .nav_links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar .nav_links ul li{
+        margin: 25px 0px;
+        font-size: 1.3em;
+    }
+}
+.mobile-menu{
+    margin-left: 0;
+}
+
+.section_1{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .background{
+        background-image: url(./images/balle.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 99.5%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        .table{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.034);
+        } 
+        form{
+            width: 100%;
+            height: auto;
+            line-height: 1.5em;
+            color: black;
+            background-color: rgba(97, 53, 15, 0.605);
+            margin-top: 20px;
+        }
+        form label{
+            color: white;
+        }
+h1{
+    color: rgba(0, 0, 0, 0.797);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2EM;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5ch;
+    text-transform: uppercase;
+}
+label{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input{
+    border-radius: 10px;
+    border: 0;
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+}
+table{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.693);
+    margin-top: 45px;
+}
+th{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(167, 165, 165, 0.651);
+}
+td{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(98, 97, 97, 0.263);
+}
+button{
+    width: 150px;
+    border-radius: 1ch;
+    border: 0;
+}
